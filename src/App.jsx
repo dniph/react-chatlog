@@ -2,6 +2,7 @@ import React from "react";
 import './App.css';
 import ChatEntry from './components/ChatEntry';
 import chat from './data/messages.json';
+import ChatLog from './components/ChatLog';
 
 
 const App = () => {
@@ -11,7 +12,7 @@ const App = () => {
         <h1>Application title</h1>
       </header>
       <main>
-        <ChatEntry sender = {chat[0].sender} body= {chat[0].body} timeStamp= {chat[0].timeStamp} ></ChatEntry>
+        <ChatLog entries= {chat}></ChatLog>
       </main>
     </div>
   );

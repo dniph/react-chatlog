@@ -1,11 +1,9 @@
 import './ChatEntry.css';
-import React from "react";
-import PropTypes from "prop-types";
-import TimeStamp from "./TimeStamp";
+import PropTypes from 'prop-types';
+import TimeStamp from './TimeStamp';
 
 
 const ChatEntry = ({sender, body, timeStamp}) => {
-
   return (
     <div className="chat-entry local">
       <h2 className="entry-name">{sender}</h2>
